@@ -11,4 +11,4 @@
 ## Completed Tasks
 - [x] Repository created
 - [x] README added
-- [ ] C programs
+- [x] C programs
