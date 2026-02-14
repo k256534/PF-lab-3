@@ -1,0 +1,21 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int dataused ;
+  
+  cout<< "enter total GB used";
+  cin>> dataused;
+  
+  if (dataused <= 50 ) {
+  	cout<< "Category: Basic User" << endl;
+  }
+  else if (dataused <= 150) {
+        cout << "Category: Standard User" << endl;
+    }
+    else {
+        cout << "Category: Heavy User" << endl;
+    }
+   return 0;
+}
