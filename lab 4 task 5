@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int choice;
+
+    cout << "Banking Service Menu" << endl;
+    cout << "1. Balance Inquiry" << endl;
+    cout << "2. Withdraw Money" << endl;
+    cout << "3. Deposit Money" << endl;
+    cout << "4. Exit" << endl;
+    cout << "Enter your choice: ";
+    
+    cin >> choice;
+    switch (choice) {
+        case 1:
+            cout << "Your current balance is $1." << endl;
+        case 2:
+            cout << "withdraw money selected." << endl;
+        case 3:
+            cout << "deposit money selected." << endl;         
+        case 4:
+            cout << "Exited" << endl;         
+        default:
+            cout << "invalid choice." << endl; }
+    return 0;   }
