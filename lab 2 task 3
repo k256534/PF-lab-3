@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int accountBalance ;
+    
+     cout<< "enter account Balance";
+  cin>> accountBalance;
+  
+  if ( accountBalance > 0 ){
+  	cout << " positve balance" << endl;
+  }
+  
+  else if ( accountBalance < 0) {
+        cout << "overdraw" << endl;
+    }
+    
+    
+  else{
+  	cout << "Zero balance" << endl;
+  }
+  return 0;
+}
