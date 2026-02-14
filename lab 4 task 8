@@ -1,0 +1,102 @@
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+    int choice;
+    double n1, n2;
+
+    cout << "===== Math Operations Console =====" << endl;
+    cout << "1. Addition" << endl;
+    cout << "2. Subtraction" << endl;
+    cout << "3. Multiplication" << endl;
+    cout << "4. Division" << endl;
+    cout << "5. Square" << endl;
+    cout << "6. Cube" << endl;
+    cout << "7. Square Root" << endl;
+    cout << "8. Power" << endl;
+    cout << "9. Absolute Value" << endl;
+    cout << "10. Modulus" << endl;
+
+    cout << "Enter your choice: ";
+    cin >> choice;
+
+    switch(choice) {
+
+        case 1:
+            cout << "Enter two numbers: ";
+            cin >> n1 >> n2;
+            cout << "Answer = " << n1 + n2;
+            break;
+
+        case 2:
+            cout << "Enter two numbers: ";
+            cin >> n1 >> n2;
+            cout << "Answer = " << n1 - n2;
+            break;
+
+        case 3:
+            cout << "Enter two numbers: ";
+            cin >> n1 >> n2;
+            cout << "Answer = " << n1 * n2;
+            break;
+
+        case 4:
+            cout << "Enter two numbers: ";
+            cin >> n1 >> n2;
+            if(n2 == 0)
+                cout << "Cannot divide by zero";
+            else
+                cout << "Answer = " << n1 / n2;
+            break;
+
+        case 5:
+            cout << "Enter a number: ";
+            cin >> n1;
+            cout << "Answer = " << n1 * n1;
+            break;
+
+        case 6:
+            cout << "Enter a number: ";
+            cin >> n1;
+            cout << "Answer = " << n1 * n1 * n1;
+            break;
+
+        case 7:
+            cout << "Enter a number: ";
+            cin >> n1;
+            if(n1 < 0)
+                cout << "not possible";
+            else
+                cout << "Answer = " << sqrt(n1);
+            break;
+
+        case 8:
+            cout << "Enter base and power: ";
+            cin >> n1 >> n2;
+            cout << "Answer = " << pow(n1, n2);
+            break;
+
+        case 9:
+            cout << "Enter a number: ";
+            cin >> n1;
+            cout << "Answer = " << abs(n1);
+            break;
+
+        case 10:
+            cout << "Enter two numbers: ";
+            cin >> n1 >> n2;
+            if((int)n2 == 0)
+                cout << "Modulus by zero not allowed";
+            else
+                cout << "Answer = " << (int)n1 % (int)n2;
+            break;
+
+        default:
+            cout << "please enter again";
+    }
+
+    return 0;
+}
