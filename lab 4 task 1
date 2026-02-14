@@ -1,0 +1,28 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int totalClasses, attendedClasses;
+    float attendancePercentage;
+
+    cout << "Enter total number of practice sessions: ";
+    cin >> totalClasses;
+
+    cout << "Enter number of sessions attended: ";
+    cin >> attendedClasses;
+
+
+    attendancePercentage = (float)attendedClasses / totalClasses * 100;
+
+    cout << "Attendance %: " << attendancePercentage << "%" << endl;
+
+    if (attendancePercentage >= 75) {
+        cout << "Selected for Tournament." << endl;
+    } else {
+        cout << " Not Selected" << endl;
+    }
+    return 0;
+}
+
+
