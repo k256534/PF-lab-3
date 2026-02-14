@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int s1, s2, s3, s4, s5;
+    float total, percentage;
+
+    // Input marks
+    cout << "Enter marks for 5 subjects (0-100):" << endl;
+    cin >> s1 >> s2 >> s3 >> s4 >> s5;
+
+    
+    total = s1 + s2 + s3 + s4 + s5;
+    percentage = (total / 500) * 100;
+
+    cout << "Percentage: " << percentage << "%" << endl;
+
+    
+    if (percentage >= 85) {
+        cout << "Full Scholarship" << endl;
+    }
+    else if (percentage >= 70) {
+        cout << "Partial Scholarship" << endl;
+    }
+    else if (percentage >= 50) {
+        cout << "Eligible for Consideration" << endl;
+    }
+    else {
+        cout << "Not Eligible" << endl;
+    }
+
+    return 0;
+}
