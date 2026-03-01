@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int attendance;
+    int totalPresent = 0;
+
+    // Loop runs exactly 30 times (for 30 students)
+    for(int i = 1; i <= 7; i++) {
+        printf("Enter attendance for student %d (1 = Present, 0 = Absent): ", i);
+        scanf("%d", &attendance);
+
+        if(attendance == 1) {
+            totalPresent++;
+        }
+    }
+    printf("\nTotal number of students present: %d\n", totalPresent);
+
+    return 0;
+}
+

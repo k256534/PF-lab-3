@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int totalSeats = 40;
+    int bookedSeats = 0;
+    int choice;
+
+    while(bookedSeats < totalSeats) {
+
+        printf("\nSeats remaining: %d\n", totalSeats - bookedSeats);
+        printf("Press 1 to book a seat or 0 to stop: ");
+        scanf("%d", &choice);
+
+        if(choice == 0) {
+            break;  // Operator stops early
+        }
+        else if(choice == 1) {
+            bookedSeats++;
+            printf("Seat booked successfully!\n");
+        }
+        else {
+            printf("Invalid input! Please enter 1 or 0.\n");
+        }
+    }
+
+    if(bookedSeats == totalSeats) {
+        printf("\nAll seats are fully booked!\n");
+    }
+
+    printf("Total seats booked: %d\n", bookedSeats);
+    printf("Seats remaining: %d\n", totalSeats - bookedSeats);
+
+    return 0;
+}
